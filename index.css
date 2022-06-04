@@ -1,0 +1,38 @@
+body{
+    background: url(./images/akat.jpg);
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   /* float: left;
+   margin: 200px;
+     */
+}
+
+.main-part{
+
+    height: 60px;
+    width: 80px;
+    text-align: center;
+    /* background-color: #171617; */
+    line-height: 0.2rem;
+    border: 3px solid rgb(20, 20, 20);
+    margin-top: 50vh;
+
+
+}
+
+.main-part:hover{
+    border: 5px solid yellow;
+}
+
+.main-part-work{
+    color: yellow;
+    font-weight: bold;
+}
+
+.main-part-name{
+    color: white;
+}
