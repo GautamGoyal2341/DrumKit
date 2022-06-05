@@ -31,28 +31,28 @@
 
         <div data-key="71" class="main-part key">
           <h2 class="main-part-name">G</h2>
-          <p class="main-part-work sound">Kisame</p>
+          <p class="main-part-work sound">KISAME</p>
         </div>
 
-        <!-- <div data-key="72" class="main-part key">
+        <div data-key="72" class="main-part key">
           <h2 class="main-part-name">H</h2>
-          <p class="main-part-work sound">HIHAT</p>
+          <p class="main-part-work sound">MADARA</p>
         </div>
 
-        <div data-key="73"class="main-part key">
+        <div data-key="73" class="main-part key">
           <h2 class="main-part-name">I</h2>
-          <p class="main-part-work">HIHAT</p>
-        </div> -->
+          <p class="main-part-work">GARA</p>
+        </div>
 
-        <!-- <div data-key="74"class="main-part key">
+        <div data-key="74" class="main-part key">
           <h2 class="main-part-name">J</h2>
-          <p class="main-part-work">HIHAT</p>
+          <p class="main-part-work">JIRAYIA</p>
         </div>
 
         <div data-key="75" class="main-part key">
           <h2 class="main-part-name">K</h2>
-          <p class="main-part-work">HIHAT</p>
-        </div> -->
+          <p class="main-part-work">SASUKE</p>
+        </div>
       </div>
     </section>
 
@@ -62,9 +62,11 @@
       <audio data-key="68" src="./sounds/Didera.wav"></audio>
       <audio data-key="70" src="./sounds/sasori.wav"></audio>
       <audio data-key="71" src="./sounds/kisame.wav"></audio>
-      <!-- <audio data-key="72" src=""></audio> -->
-      <!-- <audio data-key="73" src=""></audio>
-        <audio data-key="74" src=""></audio> -->
+      <audio data-key="72" src="./sounds/madara.wav"></audio>
+      <audio data-key="73" src="./sounds/gara.wav"></audio>
+      <audio data-key="74" src="./sounds/jirayia.wav"></audio>
+      <audio data-key="75" src="./sounds/sasuke.wav"></audio>
+
     </section>
 
     <script>
@@ -80,8 +82,9 @@
       });
 
       function removeTransition(e) {
-        if (e.propertyName !== "border-bottom-width") return;
-        console.log(e.propertyName);
+        if (e.propertyName !== "transform") return;
+        // console.log(e.propertyName);
+        this.classList.remove("playing");
       }
 
       const keys = document.querySelectorAll(".key");
