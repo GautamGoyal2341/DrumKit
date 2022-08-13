@@ -27,6 +27,7 @@ body{
 
 }
 
+
 .main-part:hover{
     transform: scale(2);
     border: 5px solid yellow;
@@ -38,6 +39,9 @@ body{
     transform: scale(2);
     border: 5px solid yellow;
     box-shadow: 0 0 12px yellow;
+    /* display: none; */
+    background: url(./images/naruto.PNG) no-repeat fixed center;
+
 
 }
 .transend{
